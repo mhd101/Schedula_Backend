@@ -18,6 +18,6 @@ export default new DataSource({
   database: process.env.DB_NAME,
   entities: [User, Doctor, Patient, Availability, Slot, Appointment, ElasticSchedule],
   migrations: ['src/migrations/*.ts'],
-  synchronize: true, // Set to false in production
+  synchronize: false, // Set to false in production
   logging: true,
 });
